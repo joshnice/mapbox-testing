@@ -18,8 +18,8 @@ In a browser open index.html file
 
 ## Updating the GeoJSON
 
-Replace the contents of the geojson.json file
+Replace the contents of the geojson.json file inside the input folder
 
 ## Updating the Mapbox style
 
-Replace the contents of the style.json file
+Replace the contents of the style.json file inside the input folder
