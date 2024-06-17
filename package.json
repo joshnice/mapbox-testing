@@ -1,0 +1,11 @@
+{
+  "name": "mapbox-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./node/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
