@@ -1,3 +1,40 @@
 {
-  "hello": "style"
+  "version": 8,
+  "name": "mapbox-testing",
+  "center": [-0.1318126024467574, 51.50347060183432],
+  "zoom": 15.5,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {},
+  "glyphs": "mapbox://fonts/joshnice/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "fill-layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "green"
+      },
+      "source": "geojson",
+      "filter": ["==", ["geometry-type"], "Polygon"]
+    },
+    {
+      "id": "line-layer",
+      "type": "line",
+      "paint": {
+        "line-color": "red",
+        "line-width": 5
+      },
+      "source": "geojson",
+      "filter": ["==", ["geometry-type"], "LineString"]
+    },
+    {
+      "id": "symbol-layer",
+      "type": "symbol",
+      "layout": {
+        "text-field": ["get", "text"]
+      },
+      "source": "geojson",
+      "filter": ["==", ["geometry-type"], "Point"]
+    }
+  ]
 }
